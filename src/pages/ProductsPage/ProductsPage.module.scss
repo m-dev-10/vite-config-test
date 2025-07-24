@@ -1,0 +1,41 @@
+.productsPage {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.title {
+  font-size: 32px;
+  color: #333;
+  margin: 0;
+}
+
+.backLink {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+} 
